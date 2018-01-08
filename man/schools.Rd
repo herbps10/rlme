@@ -5,11 +5,14 @@
 \alias{schools}
 \title{PISA Literacy Data}
 \format{A data frame with 334 observations on the following 6 variables.
-\describe{ \item{list("y")}{a numeric vector indicating student literacy}
-\item{list("socio")}{a numeric vector} \item{list("sex")}{a numeric vector}
-\item{list("age")}{a numeric vector} \item{list("region")}{a numeric vector
-indicating four regions} \item{list("school")}{a numeric vector indicating
-the schools within region} }}
+\describe{
+   \item{y}{a numeric vector indicating student literacy}
+   \item{socio}{a numeric vector}
+   \item{sex}{a numeric vector}
+   \item{age}{a numeric vector}
+   \item{region}{a numeric vector indicating four regions}
+   \item{school}{a numeric vector indicating the schools within region}
+}}
 \description{
 The data in Program for International Assessment (PISA) on academic
 proficiency in schools around the world.
@@ -26,11 +29,8 @@ proficiency in schools around the world.
 # rlme.fit = rlme(y ~ 1 + sex + age + (1 | region) + (1 | region:school), 
 #	schools, method="gr")
 # summary(rlme.fit)
-
 }
 \references{
-OECD (2010). PISA 2009 Results. http://www.oecd.org/ %% ~~
-possibly secondary sources and usages ~~
+OECD (2010). PISA 2009 Results. http://www.oecd.org/
 }
 \keyword{datasets}
-

@@ -22,4 +22,3 @@ Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
 http://scholarworks.wmich.edu/dissertations/40. Dissertation.
 }
-

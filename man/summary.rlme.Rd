@@ -14,10 +14,9 @@
 \description{
 Summarizes a model fit from the rmle function
 }
-\author{
-Herb Susmann \email{hps1@geneseo.edu}
-}
 \seealso{
 \code{\link{rlme}} \code{\link{plot.rlme}}
 }
-
+\author{
+Herb Susmann \email{hps1@geneseo.edu}
+}

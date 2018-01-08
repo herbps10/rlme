@@ -40,9 +40,6 @@ errors.
 Correlation coefficients are obtained using Moment Estimates. See Klole et.
 al (2009), Bilgic (2012) and HM (2012)
 }
-\author{
-Yusuf Bilgic
-}
 \references{
 Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
@@ -55,4 +52,6 @@ American Statistical Association, 104(485):384-390, 2009.
 T. P. Hettmansperger and J. W. McKean. Robust Nonparametric Statistical
 Methods. Chapman Hall, 2012.
 }
-
+\author{
+Yusuf Bilgic
+}

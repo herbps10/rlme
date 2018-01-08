@@ -48,4 +48,3 @@ fitdvcov(cov, jr.beta, gr.beta, var.b)
 \seealso{
 \code{\link{compare.fits}}
 }
-

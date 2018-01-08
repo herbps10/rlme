@@ -51,9 +51,6 @@ concise (1-5 lines) description of what the function does. ~~
 # See the rlme function.
 
 }
-\author{
-Yusuf K. Bilgic, yekabe@hotmail.com
-}
 \references{
 Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
@@ -65,5 +62,7 @@ rank-based estimates for gee models. 2013. Submitted.
 \seealso{
 rlme, GR_est, JR_est, rprmeddisp
 }
+\author{
+Yusuf K. Bilgic, yekabe@hotmail.com
+}
 \keyword{models}
-

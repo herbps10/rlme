@@ -5,7 +5,7 @@
 #' The fit is obtained from rlme()
 #' 
 #' 
-#' @param rlme.fit 
+#' @param rlme.fit RLME fit object
 #' @seealso rlme 
 #' 
 #' @export

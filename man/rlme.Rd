@@ -84,9 +84,6 @@ summary(rlme.fit)
 # weight="hbr" is for the gee method.
 
 }
-\author{
-Yusuf Bilgic \email{yekabe@hotmail.com} and Herb Susmann \email{hps1@geneseo.edu}
-}
 \references{
 Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
@@ -98,5 +95,7 @@ Methods. Chapman Hall, 2012.
 \seealso{
 summary.rlme, plot.rlme, compare.fits
 }
+\author{
+Yusuf Bilgic \email{yekabe@hotmail.com} and Herb Susmann \email{hps1@geneseo.edu}
+}
 \keyword{models}
-

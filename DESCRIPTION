@@ -26,5 +26,6 @@ Suggests:
 NeedsCompilation: yes
 LinkingTo: Rcpp
 Repository: CRAN
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.1
 Packaged: 2017-09-13 00:01:12 UTC; herb
+LazyData: true

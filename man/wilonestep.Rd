@@ -19,4 +19,3 @@ J. T. Terpstra and J. W. McKean. Rank-based analysis of linear
 models using R. Journal of Statistical Software, 14(7) 1 -- 26, 7 2005. ISSN
 1548-7660. URL http://www.jstatsoft.org/v14/i07.
 }
-

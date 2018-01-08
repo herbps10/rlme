@@ -1,4 +1,5 @@
 #' @importFrom stats median
+#' @importFrom magic adiag
 GEER_est2 <- function(x, y, I, sec, mat, school, section = 1, weight = "wil", 
     rprpair = "hl-disp", verbose=FALSE) {
     location = 2
@@ -248,6 +249,11 @@ GR_est2 <- function(x, y, I, sec, mat, school, section = 1, rprpair = "hl-disp",
 JR_est2 <- function(x, y, I, sec, mat, school, section = 1, rprpair = "hl-disp", verbose=FALSE) {
     pp <- dim(x)[2] + 1
     
+    location = scale = 2
+    if (rprpair == "med-mad") {
+        location = scale = 1
+    }
+    
     if(verbose == TRUE) {
       cat("JR: calling wilonestep\n")
     }
@@ -298,14 +304,15 @@ JR_est2 <- function(x, y, I, sec, mat, school, section = 1, rprpair = "hl-disp",
         effect_sch = effect_sch, effect_err = effect_err)
 }
 
+#' @importFrom nlme random.effects
+#' @importFrom mgcv extract.lme.cov2
+#' @importFrom nlme lme
 LM_est2 <- function(x, y, dat, method = "REML") {
     model = as.formula(paste("y ~ 1 + ", paste(colnames(x), collapse = " + ")))
     fit.lme = lme(model, data = dat, random = ~1 | school, method = method)
     summary(fit.lme)
-    theta0 <- extract.lme.cov2(fit.lme, dat, start.level = 1)$V[[1]][1, 
-        2]
-    theta1 <- extract.lme.cov2(fit.lme, dat, start.level = 1)$V[[1]][1, 
-        1] - (theta0)
+    theta0 <- extract.lme.cov2(fit.lme, dat, start.level = 1)$V[[1]][1, 2]
+    theta1 <- extract.lme.cov2(fit.lme, dat, start.level = 1)$V[[1]][1, 1] - (theta0)
     sigma.l <- c(theta0, theta1)
     theta <- as.vector(summary(fit.lme)$tTable[, 1])
     intra_sch.lm <- (theta1)/(sum(sigma.l))
@@ -315,6 +322,12 @@ LM_est2 <- function(x, y, dat, method = "REML") {
     effect_sch = random.effects(fit.lme, level = 1)[, 1]
     effect_err = as.vector(fit.lme$residuals[, 2])
     standr.lme = as.vector(residuals(fit.lme, type = "pearson"))
-    list(theta = theta, ses = ses, varb = varb, sigma = sigma.l, 
-        ehat = ehat, effect_sch = effect_sch, effect_err = effect_err, standr.lme = standr.lme)
+    list(theta = theta,
+         ses = ses,
+         varb = varb,
+         sigma = sigma.l, 
+         ehat = ehat,
+         effect_sch = effect_sch,
+         effect_err = effect_err,
+         standr.lme = standr.lme)
 }

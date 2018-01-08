@@ -19,6 +19,7 @@
 #' in nested designs. 2012. URL http://scholarworks.wmich.edu/dissertations/40.
 #' Dissertation.
 #' 
+#' @importFrom MASS ginv
 #' @export
 stanresidgr <- function(x, y, resid, delta = 0.8, param = 2, conf = 0.95) {
     xc = as.matrix(centerx(x))

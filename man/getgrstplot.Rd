@@ -7,7 +7,7 @@
 getgrstplot(rlme.fit)
 }
 \arguments{
-\item{rlme.fit}{}
+\item{rlme.fit}{RLME fit object}
 }
 \description{
 It gets Q-Q Plot and Standardized Residual Plot of residuals.
@@ -18,4 +18,3 @@ The fit is obtained from rlme()
 \seealso{
 rlme
 }
-

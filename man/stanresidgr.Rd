@@ -22,9 +22,6 @@ stanresidgr(x, y, resid, delta = 0.8, param = 2, conf = 0.95)
 \description{
 Standardizes the residuals obtained from the GR fitting.
 }
-\author{
-J. W.  McKean
-}
 \references{
 T. P. Hettmansperger and J. W. McKean. Robust Nonparametric
 Statistical Methods. Chapman Hall, 2012.
@@ -33,4 +30,6 @@ Y. K. Bilgic. Rank-based estimation and prediction for mixed effects models
 in nested designs. 2012. URL http://scholarworks.wmich.edu/dissertations/40.
 Dissertation.
 }
-
+\author{
+J. W.  McKean
+}

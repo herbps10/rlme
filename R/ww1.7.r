@@ -1,4 +1,5 @@
 #' @importFrom stats qchisq
+#' @importFrom MASS ltsreg
 blwts <- function(xmat, y, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$robdis2, 
     percent = 0.95, k = 2, intest = myltsreg(xmat, y)$coef) {
     xmat = as.matrix(xmat)
@@ -194,6 +195,7 @@ grwts <- function(xmat, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$rob
 }
 
 #' @importFrom stats median
+#' @importFrom MASS ltsreg
 hbrwts <- function(xmat, y, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$robdis2, 
     percent = 0.95, intest = myltsreg(xmat, y)$coef) {
     xmat = as.matrix(xmat)
@@ -307,6 +309,7 @@ mycov.rob <- function(x, cor = FALSE, quantile.used = floor((n + p + 1)/2),
     ans
 }
 
+#' @importFrom MASS lmsreg
 mylmsreg <- function(xmat, y) {
     if (v1.9.0()) {
         if (!any(search() == "package:MASS")) 
@@ -327,6 +330,7 @@ mylmsreg <- function(xmat, y) {
     ans
 }
 
+#' @importFrom MASS ltsreg
 myltsreg <- function(xmat, y) {
     if (v1.9.0()) {
         if (!any(search() == "package:MASS")) 
@@ -347,6 +351,7 @@ myltsreg <- function(xmat, y) {
     ans
 }
 
+#' @importFrom MASS ginv
 mymahalanobis <- function(x, center, cov, inverted = FALSE, tol.inv = 1e-17) {
     x <- if (is.vector(x)) 
         matrix(x, nrow = length(x))
@@ -576,6 +581,7 @@ v1.9.0 <- function() {
     n >= 19
 }
 
+#' @importFrom MASS ginv
 varcov.gr <- function(x, bmat, res, delta = 0.8) {
     x = as.matrix(x)
     xbar = as.matrix(apply(x, 2, mean))
@@ -813,6 +819,8 @@ wwest <- function(x, y, bij = "WIL", center = F, print.tbl = T) {
 }
 
 #' @importFrom stats median
+#' @importFrom quantreg rq.fit.br
+#' @importFrom quantreg rq.fit.fnb
 wwfit <- function(x, y, bij = wilwts(as.matrix(x)), center = F) {
     x = as.matrix(x)
     n = dim(x)[1]

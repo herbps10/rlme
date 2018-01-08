@@ -16,4 +16,3 @@ concise (1-5 lines) description of what the function does.
 \seealso{
 rlme
 }
-

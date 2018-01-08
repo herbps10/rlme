@@ -40,9 +40,6 @@ vectors along with scale estimates in each level. This function was designed
 for three-level nested design. See rprmeddisp2() in the package, this is for
 two-level nested design.
 }
-\author{
-Yusuf Bilgic \email{yekabe@hotmail.com}
-}
 \references{
 Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
@@ -51,4 +48,6 @@ http://scholarworks.wmich.edu/dissertations/40. Dissertation.
 \seealso{
 \code{\link{rpr}} \code{\link{dispvar}}
 }
-
+\author{
+Yusuf Bilgic \email{yekabe@hotmail.com}
+}

@@ -41,10 +41,9 @@ procedure (RPP). Also, "med-mad" would be an alternative.}
 \description{
 Fit a model using the JR method
 }
-\author{
-Yusuf Bilgic
-}
 \seealso{
 rlme
 }
-
+\author{
+Yusuf Bilgic
+}

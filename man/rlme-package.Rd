@@ -22,6 +22,9 @@ rlme.fit = rlme(formula, schools)
 summary(rlme.fit)
 
 }
+\seealso{
+\code{\link{rlme}}
+}
 \author{
 Yusuf Bilgic \email{bilgic@geneseo.edu}, Herb Susmann
 \email{hps1@geneseo.edu} and Joseph McKean \email{joemckean@yahoo.com}
@@ -29,9 +32,5 @@ Yusuf Bilgic \email{bilgic@geneseo.edu}, Herb Susmann
 Maintainer: Yusuf Bilgic \email{bilgic@geneseo.edu} or
 \email{yusuf.k.bilgic@gmail.com}
 }
-\seealso{
-\code{\link{rlme}}
-}
 \keyword{models}
 \keyword{package}
-

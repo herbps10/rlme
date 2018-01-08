@@ -51,4 +51,3 @@ Fits a model using the GR method
 Yusuf Bilgic
 }
 \keyword{models}
-

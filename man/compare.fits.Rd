@@ -41,4 +41,3 @@ compare.fits(cov, reml.fit, gr.fit)
 \code{\link{fitdvcov}}
 }
 \keyword{models}
-

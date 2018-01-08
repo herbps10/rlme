@@ -16,7 +16,7 @@ wilstep(I, sec, mat, init = F, y, x, sigmaa2 = 1, sigmaw2 = 1,
 \item{mat}{A matrix of numbers of observations in subclusters.  Dimension is
 Ixmax(number ofsubclusters). Each row indicates one cluster.}
 
-\item{init}{}
+\item{init}{boolean}
 
 \item{y}{Response vector of nx1.}
 
@@ -42,9 +42,6 @@ Gets weighted rank based fittings for nested designs.
 \details{
 Initial inputs are from the independent model.
 }
-\author{
-J. W. McKean and Y. K. Bilgic
-}
 \references{
 Y. K. Bilgic and J. W. McKean. Iteratively reweighted
 generalized rank-based method in mixed models. 2013. Under preperation.
@@ -53,4 +50,6 @@ J. T. Terpstra and J. W. McKean. Rank-based analysis of linear models using
 R. Journal of Statistical Software, 14(7) 1 - 26, 7 2005. ISSN 1548-7660.
 URL http://www.jstatsoft.org/v14/i07.
 }
-
+\author{
+J. W. McKean and Y. K. Bilgic
+}

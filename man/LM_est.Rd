@@ -32,9 +32,6 @@ This gets the REML or ML estimates and predictions of random effects from
 the nlme package. 
 function does.
 }
-\author{
-Yusuf Bilgic
-}
 \references{
 J. Pinheiro, D. Bates, S. DebRoy, D. Sarkar and R Development
 Core Team. nlme linear and non- linear mixed effects models. The R Journal,
@@ -43,5 +40,7 @@ Core Team. nlme linear and non- linear mixed effects models. The R Journal,
 \seealso{
 \code{\link{rlme}}
 }
+\author{
+Yusuf Bilgic
+}
 \keyword{models}
-

@@ -34,4 +34,3 @@ on X and Y input matrices
 \author{
 Herb Susmann
 }
-

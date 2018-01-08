@@ -24,9 +24,6 @@ package produces this weights as well.
 \details{
 The ww package explains how it is obtained.
 }
-\author{
-J. W. McKean
-}
 \references{
 T. P. Hettmansperger and J. W. McKean. Robust Nonparametric
 Statistical Methods. Chapman Hall, 2012.
@@ -38,4 +35,6 @@ URL http://www.jstatsoft.org/v14/i07.
 \seealso{
 GEER_est
 }
-
+\author{
+J. W. McKean
+}

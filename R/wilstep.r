@@ -8,7 +8,7 @@
 #' @param sec A vector of subcluster numbers in clusters.
 #' @param mat A matrix of numbers of observations in subclusters.  Dimension is
 #' Ixmax(number ofsubclusters). Each row indicates one cluster.
-#' @param init 
+#' @param init boolean
 #' @param y Response vector of nx1.
 #' @param x Design matrix, pxn, without intercept.
 #' @param sigmaa2 Initial sigma for cluster in three-level design. 

@@ -42,10 +42,9 @@ lmr.fit = lmr(y ~ age + sex, data=schools, se=TRUE)
 summary(lmr.fit)
 
 }
-\author{
-Herb Susmann
-}
 \seealso{
 rlme, optim
 }
-
+\author{
+Herb Susmann
+}

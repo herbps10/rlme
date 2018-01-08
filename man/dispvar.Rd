@@ -19,4 +19,3 @@ deviation when normal errors.
 T. P. Hettmansperger and J. W. McKean. Robust Nonparametric
 Statistical Methods. Chapman Hall, 2012.
 }
-

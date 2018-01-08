@@ -24,6 +24,8 @@
 #' URL http://www.jstatsoft.org/v14/i07. 
 #' 
 #' @importFrom stats qchisq
+#' @importFrom robustbase covMcd
+#' @importFrom MASS ltsreg
 #' 
 #' @export
 hbrwts_gr <- function(xmat, y, percent = 0.95, intest = ltsreg(xmat,y)$coef) {

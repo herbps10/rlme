@@ -42,9 +42,6 @@ rpr(y ~ age + sex + (1 | school) + (1 | school:region), lmr.fit$ehat, schools)
 rpr(y ~ age + sex + (1 | school), lmr.fit$ehat, schools)
 
 }
-\author{
-J. W. McKean and Y. K. Bilgic
-}
 \references{
 Y. K. Bilgic. Rank-based estimation and prediction for mixed
 effects models in nested designs. 2012. URL
@@ -53,4 +50,6 @@ http://scholarworks.wmich.edu/dissertations/40. Dissertation.
 \seealso{
 rprmeddis, dispvar
 }
-
+\author{
+J. W. McKean and Y. K. Bilgic
+}

@@ -6,15 +6,21 @@
 #' @name instruction
 #' @docType data
 #' @format A data frame with 1190 observations on the following 13 variables.
-#' \describe{ \item{list("X")}{a numeric vector} \item{list("girl")}{a numeric
-#' vector} \item{list("minority")}{a numeric vector} \item{list("mathkind")}{a
-#' numeric vector} \item{list("mathgain")}{a numeric vector}
-#' \item{list("ses")}{a numeric vector} \item{list("yearstea")}{a numeric
-#' vector} \item{list("mathknow")}{a numeric vector} \item{list("housepov")}{a
-#' numeric vector} \item{list("mathprep")}{a numeric vector}
-#' \item{list("classid")}{a numeric vector identifying the class within school}
-#' \item{list("schoolid")}{a numeric vector identifying the school}
-#' \item{list("childid")}{a numeric vector} }
+#' \describe{
+#'    \item{X}{a numeric vector}
+#'    \item{girl}{a numeric vector}
+#'    \item{minority}{a numeric vector}
+#'    \item{mathkind}{a numeric vector}
+#'    \item{mathgain}{a numeric vector}
+#'    \item{ses}{a numeric vector}
+#'    \item{yearstea}{a numeric vector}
+#'    \item{mathknow}{a numeric vector}
+#'    \item{housepov}{a numeric vector}
+#'    \item{mathprep}{a numeric vector}
+#'    \item{classid}{a numeric vector identifying the class within school}
+#'    \item{schoolid}{a numeric vector identifying the school}
+#'    \item{childid}{a numeric vector}
+#' }
 #' @source West, B., Welch, K. B., & Galecki, A. T. (2006). Linear mixed
 #' models: a practical guide using statistical software. Chapman & Hall/CRC.
 #' @keywords datasets
@@ -43,8 +49,6 @@
 #' #  method = "gr")
 #'   
 #' # summary(fit.rlme)
-#' 
-#' @export
 NULL
 
 #' rlme
@@ -64,6 +68,10 @@ NULL
 #' \email{yusuf.k.bilgic@@gmail.com}
 #' @seealso \code{\link{rlme}}
 #' @keywords models package
+#' @import stats
+#' @import graphics
+#' @import Rcpp
+#' @useDynLib rlme
 #' @examples
 #' 
 #' 
@@ -84,13 +92,15 @@ NULL
 #' @name schools
 #' @docType data
 #' @format A data frame with 334 observations on the following 6 variables.
-#' \describe{ \item{list("y")}{a numeric vector indicating student literacy}
-#' \item{list("socio")}{a numeric vector} \item{list("sex")}{a numeric vector}
-#' \item{list("age")}{a numeric vector} \item{list("region")}{a numeric vector
-#' indicating four regions} \item{list("school")}{a numeric vector indicating
-#' the schools within region} }
-#' @references OECD (2010). PISA 2009 Results. http://www.oecd.org/ %% ~~
-#' possibly secondary sources and usages ~~
+#' \describe{
+#'    \item{y}{a numeric vector indicating student literacy}
+#'    \item{socio}{a numeric vector}
+#'    \item{sex}{a numeric vector}
+#'    \item{age}{a numeric vector}
+#'    \item{region}{a numeric vector indicating four regions}
+#'    \item{school}{a numeric vector indicating the schools within region}
+#' }
+#' @references OECD (2010). PISA 2009 Results. http://www.oecd.org/
 #' @keywords datasets
 #' @examples
 #' 
@@ -104,6 +114,4 @@ NULL
 #' # rlme.fit = rlme(y ~ 1 + sex + age + (1 | region) + (1 | region:school), 
 #' #	schools, method="gr")
 #' # summary(rlme.fit)
-#' 
-#' @export
 NULL
