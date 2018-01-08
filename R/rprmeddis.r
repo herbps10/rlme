@@ -34,7 +34,6 @@
 #' effects models in nested designs. 2012. URL
 #' http://scholarworks.wmich.edu/dissertations/40. Dissertation.
 #' 
-#' @importFrom stats median
 #' @importFrom MASS huber
 #' @export
 rprmeddis <- function(I, sec, mat, ehat, location, scale, rprpair = "hl-disp")  {

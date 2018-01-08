@@ -42,7 +42,6 @@
 #' 
 #' @keywords models
 #' 
-#' @importFrom stats median
 #' @importFrom magic adiag
 #' 
 #' @examples
@@ -517,7 +516,6 @@ JR_est <- function(x, y, I, sec, mat, school, section, rprpair = "hl-disp", verb
 #' Core Team. nlme linear and non- linear mixed effects models. The R Journal,
 #' 2011. URL http://CRAN.R-project.org/package=nlme. R package version 3.1-98.
 #' 
-#' @importFrom stats as.formula
 #' @importFrom nlme random.effects
 #' @importFrom mgcv extract.lme.cov2
 #' @importFrom nlme lme

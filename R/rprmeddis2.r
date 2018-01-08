@@ -1,4 +1,3 @@
-#' @importFrom stats median
 rprmeddis2 <- function(I, sec, mat, ehat, location, scale, rprpair = "") {
     rprpair = tolower(rprpair)
     if (rprpair == "hl-disp") {

@@ -1,4 +1,3 @@
-#' @importFrom stats median
 wilcoxontau <- function(resd, p, delta = if ((length(resd)/p) > 5) 0.8 else 0.95, 
             param = 2, verbose=FALSE) {
     # Bootstrapping for large datasets

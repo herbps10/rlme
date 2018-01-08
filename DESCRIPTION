@@ -3,7 +3,7 @@ Type: Package
 Title: Rank-Based Estimation and Prediction in Random Effects Nested
     Models
 Version: 0.5
-Date: 2017-09-12
+Date: 2018-01-08
 Author: Yusuf Bilgic, Herb Susmann and Joseph McKean
 Maintainer: Yusuf Bilgic <bilgic@geneseo.edu>
 Description: Estimates robust rank-based fixed effects and predicts robust

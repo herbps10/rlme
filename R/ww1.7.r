@@ -1,4 +1,3 @@
-#' @importFrom stats qchisq
 #' @importFrom MASS ltsreg
 blwts <- function(xmat, y, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$robdis2, 
     percent = 0.95, k = 2, intest = myltsreg(xmat, y)$coef) {
@@ -181,7 +180,6 @@ fitdiag <- function(x, y, est = c("WIL", "GR"), delta = 0.8, param = 2,
         tau = tempvc$tau, taus = tempvc$tau1, se = se)
 }
 
-#' @importFrom stats qchisq
 grwts <- function(xmat, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$robdis2, 
     percent = 0.95, k = 2) {
     xmat = as.matrix(xmat)
@@ -194,7 +192,6 @@ grwts <- function(xmat, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$rob
     ans
 }
 
-#' @importFrom stats median
 #' @importFrom MASS ltsreg
 hbrwts <- function(xmat, y, robdis2 = mycov.rob(as.matrix(xmat), method = "mcd")$robdis2, 
     percent = 0.95, intest = myltsreg(xmat, y)$coef) {
@@ -381,9 +378,6 @@ pairup.ww <- function(x, type = "less") {
     ans
 }
 
-#' @importFrom graphics points
-#' @importFrom graphics abline
-#' @importFrom graphics plot
 plotfitdiag <- function(result) {
     n = length(result$cfit)
     main1 = paste("CFITS for", result$est[1], "and", result$est[2])
@@ -674,7 +668,6 @@ wilcoxonpseudo <- function(x, y, delta = 0.8, param = 2) {
     wilcoxonpseudo
 }
 
-#' @importFrom stats median
 wilcoxontau.ww <- function(resd, p, delta = if ((length(resd)/p) > 5) 0.8 else 0.95, 
     param = 2) {
     eps <- 1e-06
@@ -736,9 +729,6 @@ wts <- function(xmat, y, type = "WIL", percent = 0.95, k = 2, robdis2 = if (type
             robdis2, percent, k, intest), stop("wts:  TYPE should be WIL, THEIL, GR, HBR or BL"))
 }
 
-#' @importFrom graphics hist
-#' @importFrom graphics par
-#' @importFrom stats pt
 wwest <- function(x, y, bij = "WIL", center = F, print.tbl = T) {
     if (is.character(bij)) {
         type = bij
@@ -818,7 +808,6 @@ wwest <- function(x, y, bij = "WIL", center = F, print.tbl = T) {
     invisible(list(tmp1 = tmp1, tmp2 = tmp2, ans = ans))
 }
 
-#' @importFrom stats median
 #' @importFrom quantreg rq.fit.br
 #' @importFrom quantreg rq.fit.fnb
 wwfit <- function(x, y, bij = wilwts(as.matrix(x)), center = F) {

@@ -1,4 +1,3 @@
-#' @importFrom stats median
 #' @importFrom magic adiag
 GEER_est2 <- function(x, y, I, sec, mat, school, section = 1, weight = "wil", 
     rprpair = "hl-disp", verbose=FALSE) {
